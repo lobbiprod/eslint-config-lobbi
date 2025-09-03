@@ -11,10 +11,19 @@ Dans un projet Lobbi :
 
 ```bash
 # Installer le package ESLint + Prettier
-npm install -D @38bis/eslint-config prettier eslint eslint-plugin-react typescript @typescript-eslint/eslint-plugin @typescript-eslint/parser
+npm install -D git+ssh://git@github.com:lobbiprod/eslint-config-lobbi.git prettier @eslint/js @typescript-eslint/eslint-plugin @typescript-eslint/parser eslint eslint-plugin-import eslint-plugin-prettier eslint-plugin-react eslint-plugin-react-hooks eslint-plugin-unused-imports eslint-plugin-jsx-a11y globals typescript typescript-eslint
 ```
 Les dépendances listées ici sont nécessaires pour ESLint + Prettier.
 Les versions exactes sont définies dans le package eslint-config-lobbi.
+
+Rajouter dans le `package.json` les scripts suivants :
+```json
+"scripts": {
+  "lint": "eslint . --ext .ts,.tsx,.js,.jsx",
+  "format": "prettier --write .",
+  "check-format": "prettier --check ."
+}
+```
 
 ## 🔹 Configuration ESLint
 Créer un fichier eslint.config.js à la racine du projet :
@@ -44,14 +53,6 @@ npm run check-format
 npm run format
 ```
 
-Exemples de scripts à ajouter dans `package.json` du projet:
-```json
-"scripts": {
-  "lint": "eslint . --ext .ts,.tsx,.js,.jsx",
-  "format": "prettier --write .",
-  "check-format": "prettier --check ."
-}
-```
 
 
 ## 🔹 Règles principales
