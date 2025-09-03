@@ -1,0 +1,44 @@
+{
+  "name": "eslint-config-lobbi",
+  "version": "1.0.0",
+  "description": "Configuration ESLint personnalisée pour les projets Lobbi avec TypeScript, React et bonnes pratiques",
+  "main": "eslint.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint eslint.config.js",
+    "format": "prettier --write .",
+    "check-format": "prettier --check ."
+  },
+  "keywords": [
+    "eslint",
+    "eslint-config",
+    "lobbi",
+    "typescript",
+    "react",
+    "javascript",
+    "linting"
+  ],
+  "author": "Valentin Marty <valentin@lobbi.fr>",
+  "license": "ISC",
+  "type": "module",
+  "files": [
+    "eslint.config.js",
+    "prettier.config.js"
+  ],
+  "peerDependencies": {
+    "@eslint/js": "^9.34.0",
+    "@typescript-eslint/eslint-plugin": "^8.42.0",
+    "@typescript-eslint/parser": "^8.41.0",
+    "eslint": "^9.34.0",
+    "eslint-plugin-import": "^2.32.0",
+    "eslint-plugin-prettier": "^5.5.4",
+    "eslint-plugin-react": "^7.37.5",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "eslint-plugin-unused-imports": "^4.2.0",
+    "eslint-plugin-jsx-a11y": "^6.10.2",
+    "globals": "^16.3.0",
+    "prettier": "^3.5.3",
+    "typescript": "^5.5.2",
+    "typescript-eslint": "^8.42.0"
+  }
+}
