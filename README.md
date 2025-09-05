@@ -28,7 +28,8 @@ Rajouter dans le `package.json` les scripts suivants :
 ## 🔹 Configuration ESLint
 Créer un fichier eslint.config.js à la racine du projet :
 ```js
-import config from "@38bis/eslint-config";
+import config from 'eslint-config-lobbi';
+
 export default config;
 ```
 
@@ -41,7 +42,8 @@ npx eslint src --ext .ts,.tsx,.js,.jsx
 ## 🔹 Configuration Prettier
 Créer un fichier prettier.config.js à la racine du projet :
 ```js
-import prettierConfig from "@38bis/eslint-config/prettier.config.js";
+import prettierConfig from 'eslint-config-lobbi/prettier.config.js';
+
 export default prettierConfig;
 ```
 
