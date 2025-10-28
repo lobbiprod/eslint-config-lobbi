@@ -25,7 +25,7 @@ export default defineConfig([
 
     // Règles React
     pluginReact.configs.flat.recommended,
-    reactHooks.configs["recommended-latest"],
+    reactHooks.configs.flat.recommended,
     jsxA11y.flatConfigs.recommended,
 
 
