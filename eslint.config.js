@@ -50,10 +50,20 @@ export default defineConfig([
             semi: "error",
             quotes: ["error", "single", { avoidEscape: true }],
             "prefer-const": "error",
-            "no-unused-vars": 'warn',
+            "no-unused-vars": 'off',
 
             // TS
-            "@typescript-eslint/no-unused-vars": ["warn", { argsIgnorePattern: "^_" }],
+            "@typescript-eslint/no-unused-vars": [
+                "warn",
+                {
+                    args: "all", // Vérifie les paramètres non utilisés
+                    vars: "all", // Vérifie les variables non utilisées
+                    argsIgnorePattern: "^_", // Ignore les params préfixés par _
+                    varsIgnorePattern: "^_", // Ignore les vars préfixées par _
+                    caughtErrors: "all",
+                    ignoreRestSiblings: true,
+                }
+            ],
 
             // React (on retire les warnings inutiles)
             "react/react-in-jsx-scope": "off",
