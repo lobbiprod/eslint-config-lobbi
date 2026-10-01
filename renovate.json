@@ -1,12 +1,4 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": ["github>lobbiprod/lobbi-react-bricks:lobbi"],
-  "packageRules": [
-    {
-      "description": "Majeures bloquées par la chaîne de lint : eslint-plugin-react, eslint-plugin-import et eslint-plugin-jsx-a11y n'acceptent pas encore ESLint 10 (peer eslint ≤ ^9), et typescript-eslint n'accepte que typescript <6.1.0. Ici ce sont des peers : monter eslint ou typescript élargirait la plage annoncée à tous les projets qui consomment cette config. À cocher quand ces plugins auront suivi.",
-      "matchPackageNames": ["eslint", "@eslint/js", "typescript"],
-      "matchUpdateTypes": ["major"],
-      "dependencyDashboardApproval": true
-    }
-  ]
+  "extends": ["github>lobbiprod/lobbi-react-bricks:lobbi"]
 }
