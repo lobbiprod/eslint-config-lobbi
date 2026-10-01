@@ -1,5 +1,15 @@
 # ESLint & Prettier Config – Lobbi
 
+> ⚠️ **Dépréciée — utiliser [`@lobbi-react/core-eslint`](https://github.com/lobbiprod/lobbi-react-bricks/tree/main/packages/core/lobbi-core-eslint).**
+> Cette config n'est plus maintenue : elle reste sur ESLint 9 et ne suivra pas ESLint 10. Son successeur est publié sur le registre Cloudsmith Lobbi et maintenu dans `lobbi-react-bricks`.
+> Ce dépôt est conservé en lecture seule pour que les lockfiles qui pointent sur un de ses commits continuent de s'installer.
+>
+> **Migrer :** remplacer `eslint-config-lobbi` par `@lobbi-react/core-eslint` dans `package.json` et dans `eslint.config.js` (`import config from '@lobbi-react/core-eslint'`). Peers : `eslint ^10.4`, `typescript >=6.0.0`. Les règles changent :
+> - plus d'`eslint-plugin-react` ;
+> - `import/order` devient `import-x/order` ;
+> - plus de `semi` ni `quotes` (Prettier s'en charge) ;
+> - les imports inutilisés deviennent une erreur (`unused-imports`).
+
 Ce package contient la **configuration ESLint et Prettier standardisée** pour tous les projets de Lobbi.  
 Il permet de garantir un **style de code uniforme**, de **prévenir les erreurs courantes** et de faciliter le travail collaboratif.
 
